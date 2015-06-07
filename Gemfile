@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.21'
 
 gem 'pg'
+gem 'execjs'
+gem 'therubyracer'
 #gem 'sqlite3'
 #gem 'taps'
 
@@ -57,6 +59,7 @@ group :development do
     gem 'capistrano',         require: false
     gem 'capistrano-rvm',     require: false
     gem 'capistrano-rails',   require: false
+    gem 'capistrano-postgresql', require: false
     gem 'capistrano-bundler', require: false
     gem 'capistrano3-puma',   require: false
 end
