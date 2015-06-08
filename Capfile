@@ -1,15 +1,10 @@
 
 # Load DSL and Setup Up Stages
-require 'capistrano/setup'
-require 'capistrano/deploy'
-require "capistrano/rails/assets"
-require "capistrano/rails/migrations"
+require 'rails/all'
 
-require 'capistrano/rails'
-require 'capistrano/bundler'
-require 'capistrano/postgresql'
-require 'capistrano/rvm'
-require 'capistrano/puma'
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(*Rails.groups)
 
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
