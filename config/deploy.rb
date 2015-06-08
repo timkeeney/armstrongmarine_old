@@ -1,3 +1,5 @@
+SSHKit.config.command_map[:rake] = "bundle exec rake"
+
 # Change these
 server '104.131.144.32', port: 22, roles: [:web, :app, :db], primary: true
 
